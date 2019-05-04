@@ -6,12 +6,12 @@ import * as serviceWorker from './serviceWorker';
 // import App from './App';
 // import EssayForm from './compenent/from'
 // import Clock from  './compenent/clock';
-// import Calculator from './compenent/status_up'
+import Calculator from './compenent/status_up'
 
-import ReactInherit from './compenent/inherit'
+// import ReactInherit from './compenent/inherit'
 
 ReactDOM.render(
-	<ReactInherit />,
+	<Calculator />,
 	document.getElementById('root')
 );
 

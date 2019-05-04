@@ -1,5 +1,7 @@
 import React from 'react';
 
+// 状态提示说实话就是通过子组件调用父组件的方法，从而改变父组件的值，进而改变兄弟组件的值
+
 const scaleNames = {
 	c: '摄氏度',
 	f: '华氏温度'
@@ -38,12 +40,10 @@ class TemperatureInput extends React.Component {
 	}
 	
 	handleChange(e) {
-		// this.setState({temperature: e.target.value});
 		this.props.onTemperatureChange(e.target.value);
 	}
 	
 	render() {
-		// const temperature = this.state.temperature;
 		const temperature = this.props.temperature;
 		const scale = this.props.scale;
 		return (
@@ -93,50 +93,10 @@ class Calculator extends React.Component {
 				
 				<BoilingVerdict
 					celsius={parseFloat(celsius)} />
-			
 			</div>
 		);
 	}
 }
-// class Calculator extends React.Component {
-// 	render() {
-// 		return (
-// 			<div>
-// 				<TemperatureInput scale="c" />
-// 				<TemperatureInput scale="f" />
-// 			</div>
-// 		);
-// 	}
-// }
-
-// class Calculator extends React.Component {
-// 	constructor(props) {
-// 		super(props);
-// 		this.handleChange = this.handleChange.bind(this);
-// 		this.state = {temperature: ''};
-// 	}
-//
-// 	handleChange(e) {
-// 		this.setState({temperature: e.target.value});
-// 	}
-//
-// 	render() {
-// 		const temperature = this.state.temperature;
-// 		return (
-// 			<fieldset>
-// 				<legend>输入一个摄氏温度</legend>
-// 				<input
-// 					value={temperature}
-// 					onChange={this.handleChange} />
-//
-// 				<BoilingVerdict
-// 					celsius={parseFloat(temperature)} />
-//
-// 			</fieldset>
-// 		);
-// 	}
-// }
-
 
 
 export default Calculator;
