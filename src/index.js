@@ -6,12 +6,18 @@ import * as serviceWorker from './serviceWorker';
 // import App from './App';
 // import EssayForm from './compenent/from'
 // import Clock from  './compenent/clock';
-import Calculator from './compenent/status_up'
+// import Calculator from './compenent/status_up'
 
 // import ReactInherit from './compenent/inherit'
 
+
+// 高级部分
+
+// import JsxComponent from './highKnowledge/JSX'
+import PropType from './highKnowledge/prop_type'
+import CustomTextInput from './highKnowledge/refs'
 ReactDOM.render(
-	<Calculator />,
+	<CustomTextInput/>,
 	document.getElementById('root')
 );
 
