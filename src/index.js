@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-// import App from './App';
+// import App from './app/App';
 // import EssayForm from './compenent/from'
 // import Clock from  './compenent/clock';
 // import Calculator from './compenent/status_up'
@@ -14,10 +14,12 @@ import * as serviceWorker from './serviceWorker';
 // 高级部分
 
 // import JsxComponent from './highKnowledge/JSX'
-import PropType from './highKnowledge/prop_type'
-import CustomTextInput from './highKnowledge/refs'
+// import PropType from './highKnowledge/prop_type'
+// import CustomTextInput from './highKnowledge/refs'
+
+import TodoList from './redux/toodlist'
 ReactDOM.render(
-	<CustomTextInput/>,
+	<TodoList/>,
 	document.getElementById('root')
 );
 
