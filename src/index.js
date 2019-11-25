@@ -17,9 +17,16 @@ import * as serviceWorker from './serviceWorker';
 // import PropType from './highKnowledge/prop_type'
 // import CustomTextInput from './highKnowledge/refs'
 
-import TodoList from './redux/toodlist'
+
+
+//路由部分
+import AppRouter from './AppRouter'
+
+
+
+// import TodoList from './redux/toodlist'
 ReactDOM.render(
-	<TodoList/>,
+	<AppRouter/>,
 	document.getElementById('root')
 );
 
